@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/mlops-ec2/mlops-project/mlruns/0/fd0798253faf406999747c79390b781b/artifacts
+end_time: 1731110382373
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fd0798253faf406999747c79390b781b
+run_name: grandiose-goose-280
+run_uuid: fd0798253faf406999747c79390b781b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731110373446
+status: 3
+tags: []
+user_id: HP

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/mlops-ec2/mlops-project/mlruns/0/dd918bd84007420fa5dbc3d45045c801/artifacts
+end_time: 1731109222222
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dd918bd84007420fa5dbc3d45045c801
+run_name: gaudy-hen-958
+run_uuid: dd918bd84007420fa5dbc3d45045c801
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731109191522
+status: 3
+tags: []
+user_id: HP
