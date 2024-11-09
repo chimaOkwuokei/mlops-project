@@ -136,7 +136,7 @@ jobs:
           RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
           SERVICE_ID: ${{ secrets.SERVICE_ID }}
         run: |
-          curl -X POST "https://api.render.com/v1/services/$SERVICE_ID/deploys" \
+          curl -X POST "https://api.render.com/v1/services/srv-csnk2cqj1k6c73b4q0kg/deploys" \
           -H "Authorization: Bearer $RENDER_API_KEY" \
           -d '{"clearCache": false}'
 
