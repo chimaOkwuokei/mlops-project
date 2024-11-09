@@ -134,8 +134,9 @@ jobs:
       - name: Push to Render Repository (Render auto-detects changes)
         env:
           RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+          SERVICE_ID: ${{ secrets.SERVICE_ID }}
         run: |
-          curl -X POST "https://api.render.com/v1/services/YOUR_SERVICE_ID/deploys" \
+          curl -X POST "https://api.render.com/v1/services/$SERVICE_ID/deploys" \
           -H "Authorization: Bearer $RENDER_API_KEY" \
           -d '{"clearCache": false}'
 
