@@ -131,10 +131,10 @@ jobs:
         run: |
           docker build -t myapp:latest .
       
-      - name: Debug Render Variables
-        run: |
-          echo "Service ID: ${{ secrets.SERVICE_ID }}"
-          echo "Render API Key Length: ${#secrets.RENDER_API_KEY}"
+      # - name: Debug Render Variables
+      #   run: |
+      #     echo "Service ID: ${{ secrets.SERVICE_ID }}"
+      #     echo "Render API Key Length: ${#secrets.RENDER_API_KEY}"
 
       - name: Push to Render Repository (Render auto-detects changes)
         env:
