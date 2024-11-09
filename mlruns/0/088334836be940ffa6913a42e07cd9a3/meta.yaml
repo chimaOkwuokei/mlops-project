@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/mlops-ec2/mlops-project/mlruns/0/088334836be940ffa6913a42e07cd9a3/artifacts
+end_time: 1731111513585
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 088334836be940ffa6913a42e07cd9a3
+run_name: blushing-rook-614
+run_uuid: 088334836be940ffa6913a42e07cd9a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731111505502
+status: 3
+tags: []
+user_id: HP

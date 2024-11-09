@@ -9,7 +9,7 @@ import joblib
 from mlProject.entity.config_entity import ModelEvaluationConfig
 from mlProject.utils.common import save_json
 from pathlib import Path
-
+from mlflow.models.signature import infer_signature
 
 class ModelEvaluation:
     def __init__(self, config: ModelEvaluationConfig):
@@ -54,15 +54,36 @@ class ModelEvaluation:
             mlflow.log_metric("mae", mae)
 
 
-            # Model registry does not work with file store
-            if tracking_url_type_store != "file":
+            # Define input example and signature
+            input_example = test_x.iloc[:1]
+            signature = infer_signature(test_x, predicted_qualities)
 
-                # Register the model
+            # Model registry does not work with file store
+            # if tracking_url_type_store != "file":
+
+               
+            #     mlflow.sklearn.log_model(model, "model", registered_model_name="ElasticnetModel")
+            # else:
+            #     mlflow.sklearn.log_model(model, "model")
+            if tracking_url_type_store != "file":
+                 # Register the model
                 # There are other ways to use the Model Registry, which depends on the use case,
                 # please refer to the doc for more information:
                 # https://mlflow.org/docs/latest/model-registry.html#api-workflow
-                mlflow.sklearn.log_model(model, "model", registered_model_name="ElasticnetModel")
+                mlflow.sklearn.log_model(
+                model, 
+                "model", 
+                registered_model_name="ElasticnetModel",
+                input_example=input_example,
+                signature=signature
+                )
             else:
-                mlflow.sklearn.log_model(model, "model")
+                mlflow.sklearn.log_model(
+                model, 
+                "model", 
+                input_example=input_example,
+                signature=signature
+                )
+            
 
     
