@@ -12,4 +12,6 @@ joblib
 types-PyYAML
 Flask
 Flask-Cors
+gunicorn
+
 -e . #looks for setup.py

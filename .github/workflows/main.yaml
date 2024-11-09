@@ -130,6 +130,11 @@ jobs:
       - name: Build Docker Image
         run: |
           docker build -t myapp:latest .
+      
+      - name: Debug Render Variables
+        run: |
+          echo "Service ID: ${{ secrets.SERVICE_ID }}"
+          echo "Render API Key Length: ${#secrets.RENDER_API_KEY}"
 
       - name: Push to Render Repository (Render auto-detects changes)
         env:
@@ -139,7 +144,7 @@ jobs:
           curl -X POST "https://api.render.com/v1/services/${{ secrets.SERVICE_ID }}/deploys" \
           -H "Authorization: Bearer $RENDER_API_KEY" \
           -H "Content-Type: application/json" \
-          -d '{"clearCache": false}'
+          -d '{"clearCache":false}'
 
       - name: Clean up Docker Images
         run: |
