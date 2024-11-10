@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/mlops-ec2/mlops-project/mlruns/0/ba44c815f28141cebbd0f84975a855d5/artifacts
+end_time: 1731246714391
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ba44c815f28141cebbd0f84975a855d5
+run_name: aged-shark-211
+run_uuid: ba44c815f28141cebbd0f84975a855d5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731246695630
+status: 3
+tags: []
+user_id: HP

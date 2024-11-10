@@ -34,6 +34,8 @@ class ModelEvaluation:
 
 
         mlflow.set_registry_uri(self.config.mlflow_uri)
+
+        #uri can't be accessed if the credentials haven't been run on terminal
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
 

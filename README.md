@@ -12,7 +12,12 @@ conda init powershell
 # to deactivate venv
 conda deactivate
 
+# When you close the conda terminal
+pip install -r requirements.txt
+
 # Run these on terminal to set environment variables
 $env:MLFLOW_TRACKING_URI = "https://dagshub.com/chimaOkwuokei/mlops-project.mlflow"
 $env:MLFLOW_TRACKING_USERNAME = "chimaOkwuokei"        
 $env:MLFLOW_TRACKING_PASSWORD = "aaffcd86f8b97bfe6e1e606aaee57ca5cd3512dc"
+
+

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/mlops-ec2/mlops-project/mlruns/0/416f67935ac74e0c82955d514db93dc7/artifacts
+end_time: 1731246755706
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 416f67935ac74e0c82955d514db93dc7
+run_name: abundant-cub-787
+run_uuid: 416f67935ac74e0c82955d514db93dc7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731246744552
+status: 3
+tags: []
+user_id: HP
